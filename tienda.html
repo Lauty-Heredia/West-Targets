@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="Imagenes/Logo/icono.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body style="background-color: #252525">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="imagenes/Logo/logo.svg" alt="West Targets">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tu diseño.html">¡Tu Diseño!</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar">
+                    <img src="Imagenes/Iconos/perfil.png" class="icono">
+                    <img src="Imagenes/Iconos/carrito.png" class="icono">
+                    <img src="Imagenes/Iconos/search.png" class="icono">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4 mb-3">
+        <div class="row">
+            <!-- Aside con Acordeones -->
+            <aside class="col-12 col-md-3">
+                <div class="accordion" id="categoryAccordion">
+                    <!-- Pestaña 1: Diseños 3D -->
+                    <div class="accordion-item" style="background-color: #9557E0;">
+                        <h2 class="accordion-header" id="headingDesigns">
+                            <button class="accordion-button" type="button" style="background-color: #770FA2; color: #fff; font-weight: bold;" data-bs-toggle="collapse" data-bs-target="#collapseDesigns">
+                                Diseños 3D
+                            </button>
+                        </h2>
+                        <div id="collapseDesigns" class="accordion-collapse collapse show" aria-labelledby="headingDesigns" data-bs-parent="#categoryAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item" style="background-color: #9557E0;"><a href="#" class="category-link">Llaveros</a></li>
+                                    <li class="list-group-item" style="background-color: #9557E0;"><a href="#" class="category-link">Herramientas</a></li>
+                                    <li class="list-group-item" style="background-color: #9557E0;"><a href="#" class="category-link">Piezas Vehiculos</a></li>
+                                    <li class="list-group-item" style="background-color: #9557E0;"><a href="#" class="category-link">Juguetes</a></li>
+                                    <li class="list-group-item" style="background-color: #9557E0;"><a href="#" class="category-link">Decoraciones Navidad</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pestaña 2: Impresiones 3D -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingPrints">
+                            <button class="accordion-button collapsed" style="background-color: #770FA2; color: #fff; font-weight: bold;" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrints" aria-expanded="false" aria-controls="collapsePrints">
+                                Impresiones 3D
+                            </button>
+                        </h2>
+                        <div id="collapsePrints" class="accordion-collapse collapse" aria-labelledby="headingPrints" data-bs-parent="#categoryAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item" style="background-color: #9557E0;"><a href="#" class="category-link">Llaveros</a></li>
+                                    <li class="list-group-item" style="background-color: #9557E0;"><a href="#" class="category-link">Herramientas</a></li>
+                                    <li class="list-group-item" style="background-color: #9557E0;"><a href="#" class="category-link">Piezas Vehiculos</a></li>
+                                    <li class="list-group-item" style="background-color: #9557E0;"><a href="#" class="category-link">Juguetes</a></li>
+                                    <li class="list-group-item" style="background-color: #9557E0;"><a href="#" class="category-link">Decoracion Navidad</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+    
+            <!-- Productos (Cards) -->
+            <section class="col-12 col-md-9">
+                <div class="row g-4">
+                    <!-- Producto 1 -->
+                    <div class="col-6 col-md-6 col-lg-4">
+                        <a href="producto.html" class="product-link">
+                            <div class="product-card">
+                                <img src="Imagenes/Productos/Principal.png" class="card-img-top" alt="Producto 1">
+                                <div class="card-body text-center">
+                                    <div class="price-container">
+                                        <h5 class="card-title name">Keychain Llavero Los Piojos</h5>
+                                        <p class="card-text price">$1.50</p>
+                                    </div>
+                                    <div class="bottom-line"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="col-6 col-md-6 col-lg-4">
+                        <div class="product-card">
+                            <img src="Imagenes/Productos/product 1.png" class="card-img-top" alt="Producto 1">
+                            <div class="card-body text-center">
+                                <div class="price-container">
+                                    <h5 class="card-title name">Christmas Ornaments</h5>
+                                    <p class="card-text price">$5.60</p>
+                                </div>
+                                <div class="bottom-line"></div>
+                            </div>
+                            </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="col-6 col-md-6 col-lg-4">
+                        <div class="product-card">
+                            <img src="Imagenes/Productos/product 2.png" class="card-img-top" alt="Producto 1">
+                            <div class="card-body text-center">
+                                <div class="price-container">
+                                    <h5 class="card-title name">Hot Cocoa Dragon</h5>
+                                    <p class="card-text price">$10</p>
+                                </div>
+                                <div class="bottom-line"></div>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4">
+                         <div class="product-card">
+                        <img src="Imagenes/Productos/product 3.png" class="card-img-top" alt="Producto 1">
+                        <div class="card-body text-center">
+                            <div class="price-container">
+                                <h5 class="card-title name">Citroen 2CV Sahara</h5>
+                                <p class="card-text price">$11.90</p>
+                            </div>
+                            <div class="bottom-line"></div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4">
+                        <div class="product-card">
+                       <img src="Imagenes/Productos/product 4.png" class="card-img-top" alt="Producto 1">
+                       <div class="card-body text-center">
+                           <div class="price-container">
+                               <h5 class="card-title name">Diesel Locomotive</h5>
+                               <p class="card-text price">$80</p>
+                           </div>
+                           <div class="bottom-line"></div>
+                       </div>
+                       </div>
+                   </div>
+                   <div class="col-6 col-md-6 col-lg-4">
+                    <div class="product-card">
+                   <img src="Imagenes/Productos/product 5.png" class="card-img-top" alt="Producto 1">
+                   <div class="card-body text-center">
+                       <div class="price-container">
+                           <h5 class="card-title name">Chibi Totoro</h5>
+                           <p class="card-text price">$3.50</p>
+                       </div>
+                       <div class="bottom-line"></div>
+                   </div>
+                   </div>
+                    </div>
+                <div class="col-6 col-md-6 col-lg-4">
+                 <div class="product-card">
+               <img src="Imagenes/Productos/product 6.png" class="card-img-top" alt="Producto 1">
+               <div class="card-body text-center">
+                   <div class="price-container">
+                       <h5 class="card-title name">Ventilador de Alto Rendimiento</h5>
+                       <p class="card-text price">$3.11</p>
+                   </div>
+                   <div class="bottom-line"></div>
+               </div>
+               </div>
+           </div>
+           <div class="col-6 col-md-6 col-lg-4">
+            <div class="product-card">
+           <img src="Imagenes/Productos/product 7.png" class="card-img-top" alt="Producto 1">
+           <div class="card-body text-center">
+               <div class="price-container">
+                   <h5 class="card-title name">Mascarilla - Ficha de Sueño</h5>
+                   <p class="card-text price">$25</p>
+               </div>
+               <div class="bottom-line"></div>
+           </div>
+           </div>
+       </div>
+       <div class="col-6 col-md-6 col-lg-4">
+        <div class="product-card">
+       <img src="Imagenes/Productos/product 8.png" class="card-img-top" alt="Producto 1">
+       <div class="card-body text-center">
+           <div class="price-container">
+               <h5 class="card-title name">Pick Holder</h5>
+               <p class="card-text price">$3</p>
+           </div>
+           <div class="bottom-line"></div>
+       </div>
+       </div>
+   </div>   
+   <div class="col-6 col-md-6 col-lg-4">
+    <div class="product-card">
+  <img src="Imagenes/Productos/product 9.png" class="card-img-top" alt="Producto 1">
+  <div class="card-body text-center">
+      <div class="price-container">
+          <h5 class="card-title name">Happy Cute “Cookie Man” Cookie Cutter</h5>
+          <p class="card-text price">$2.09</p>
+      </div>
+      <div class="bottom-line"></div>
+  </div>
+  </div>
+</div>
+<div class="col-6 col-md-6 col-lg-4">
+<div class="product-card">
+<img src="Imagenes/Productos/product 10.png" class="card-img-top" alt="Producto 1">
+<div class="card-body text-center">
+  <div class="price-container">
+      <h5 class="card-title name">Cute Mini Octopus</h5>
+      <p class="card-text price">4.99</p>
+  </div>
+  <div class="bottom-line"></div>
+</div>
+</div>
+</div>
+<div class="col-6 col-md-6 col-lg-4">
+<div class="product-card">
+<img src="Imagenes/Productos/product 11.png" class="card-img-top" alt="Producto 1">
+<div class="card-body text-center">
+<div class="price-container">
+  <h5 class="card-title name">Pontiac Can Am 1977</h5>
+  <p class="card-text price">$20</p>
+</div>
+<div class="bottom-line"></div>
+</div>
+</div>
+</div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="pagination-container text-center">
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">&lt;</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">&gt;</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+
+    <section class="d-flex justify-content-center align-items-center mb-4">
+        <div class="contact-box p-4 text-center">
+            <h1 class="Contact">¿No encuentras lo que buscas?</h1>
+            <p class="mb-4">¡¡Envíanos tu diseño!! <br> Nosotros nos encargamos de imprimirlo</p>
+            <a href="contacto.html" class="btna">CONTACTANOS</a>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Logo -->
+                <div class="col-12 col-md-3 text-center text-md-start mb-3 mb-md-0">
+                    <img src="Imagenes/Logo/logo1.png" alt="WEST TARGETS Logo">
+                </div>
+    
+                <!-- Íconos de redes sociales -->
+                <div class="col-12 col-md-3 text-center text-md-start mb-3 mb-md-0">
+                    <div class="social-icons">
+                        <img src="Imagenes/Iconos/instagram.png" class="iconofoot">
+                        <img src="Imagenes/Iconos/twitter.png" class="iconofoot">
+                        <img src="Imagenes/Iconos/facebook.png" class="iconofoot">
+                    </div>
+                </div>
+    
+                <!-- Información de contacto -->
+                <div class="col-12 col-md-3 text-center text-md-start mb-3 mb-md-0">
+                    <h5>Contacto:</h5>
+                        <i class="fas fa-map-marker-alt" style="color:#770FA2"></i>      Calle falsa 123 <br>
+                        <i class="fas fa-phone-alt" style="color:#770FA2"></i>  2646310886 <br>
+                        <i class="fas fa-envelope" style="color:#770FA2"></i>  <a href="mailto:westtargets@gmail.com">westtargets@gmail.com</a>
+                </div>
+    
+                <!-- Código QR -->
+                <div class="col-12 col-md-3 text-center text-md-end">
+                    <div class="qr-code">
+                        <img src="Imagenes/data fiscal.jpg" alt="QR Code">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
